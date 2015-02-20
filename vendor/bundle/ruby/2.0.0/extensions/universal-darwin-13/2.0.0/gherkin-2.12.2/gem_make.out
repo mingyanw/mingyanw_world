@@ -1,0 +1,20 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20150220-84589-1wm0hvn.rb extconf.rb 
+checking for main() in -lc... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling gherkin_lexer_zh_tw.c
+ragel/i18n/zh_tw.c.rl:440:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+ext/gherkin_lexer_zh_tw/gherkin_lexer_zh_tw.c:739:18: warning: unused variable 'lexer_en_main' [-Wunused-const-variable]
+static const int lexer_en_main = 1;
+                 ^
+2 warnings generated.
+linking shared-object gherkin_lexer_zh_tw.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 gherkin_lexer_zh_tw.bundle ./.gem.20150220-84589-v1mguj
+installing default gherkin_lexer_zh_tw libraries
